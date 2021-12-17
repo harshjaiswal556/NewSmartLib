@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <h1>register</h1>
+    <form action="/register" method="post">
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" id="getFirstName">
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" id="getLastName">
+    <label for="Email">Email</label>
+    <input type="text" name="Email" id="getEmail">
+    <label for="gender">Gender</label>
+    <input type="radio" name="gender" value="male" id="getMale"> Male<input type="radio" name="gender" value="female" id="getFemale"> Female
+    <label for="phone">Phone</label>
+    <input type="text" name="phone" id="getPhone">
+    <label for="age">Age</label>
+    <input type="text" name="age" id="getAge">
+    <label for="pass">Password</label>
+    <input type="text" name="pass" id="getPass">
+    <label for="ConfirmPass">Confirm password</label>
+    <input type="text" name="ConfirmPass" id="getConPass">
+    <button type="submit">register</button>
+    </form>
+    <a href="login">Already have account. Login.</a>
+</body>
+</html>

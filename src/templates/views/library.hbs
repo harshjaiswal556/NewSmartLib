@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library - Create your own library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MY LIBRARY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Enter Book Number" aria-label="Search"
+                        id="searchTxt">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="color: blanchedalmond; border-color: blanchedalmond;">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-3" style="padding-left: 70px;">
+        <h1>Welcome to My Library</h1>
+        <div style="border: 2px solid rgb(196, 196, 196); border-radius: 5px; padding: 2vw;">
+            <h3>Add/Issue Book</h3>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Enter Book Name</label>
+                <input type="text" class="form-control" id="addBookName" placeholder="Book Name">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Enter Book Number</label>
+                <input type="text" class="form-control" id="addBookNo" placeholder="Book Number">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Person Name</label>
+                <input type="text" class="form-control" id="addPName" placeholder="Person Name">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Isuue Date</label>
+                <input type="text" class="form-control" id="addDate" placeholder="Isuue Date">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Available</label>
+                <input type="text" class="form-control" id="available" placeholder="Is Book available?">
+            </div>
+            <p class="card-text"></p>
+            <button class="btn btn-primary" id="addBtn" style="margin-right: 2vw;">Add Book</button>
+            <button class="btn btn-primary" id="issueBtn" style="margin-left: 2vw;">Issue Book</button>
+        </div>
+    </div>
+    <div style="padding-left: 20px; padding-right: 20px;">
+        <h2>Library Books Details</h2>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Book Number</th>
+                    <th scope="col">Book Name</th>
+                    <th scope="col">Available</th>
+                    <th scope="col">Issued By</th>
+                    <th scope="col">Issued Date</th>
+                </tr>
+            </thead>
+            <tbody id="no">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+    <script src="library.js"></script>
+</body>
+
+</html>

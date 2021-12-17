@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+  }
+  
+  nav {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: .2em 2em;
+    float: right;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: .2em .7em;
+  }
+  
+  nav a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-size: 1.15em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    transition: .25s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: rgb(220, 120, 0);
+  }
+  
+  .nav-bg {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgb(50, 50, 50);
+    transition: .45s ease-in-out;
+  }
+  
+  .bg-hidden {
+    top: -100%;
+    opacity: 0;
+  }
+  
+  .bg-visible {
+    top: 0;
+    opacity: 1;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: Ubuntu;
+    letter-spacing: 1px;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: rgb(50, 50, 50);
+    background: url(https://images.unsplash.com/photo-1511406361295-0a1ff814c0ce?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGFyayUyMGhhbGx3YXl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80) no-repeat 50% 50% fixed;
+    background-size: 140%;
+    overflow: hidden;
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding: .3em;
+    font-size: 3em;
+    font-weight: lighter;
+  }
+  
+  .content-wrapper {
+    width: 80%;
+    height: 3000px;
+    padding: 1em 10%;
+  }
+  
+  .content-wrapper h1 {
+    margin: 0;
+    color: rgb(220, 120, 0);
+  }
+  
+  .content-wrapper p {
+    font-family: "Open Sans";
+    text-indent: 1.5em;
+  }
+
+
+.button{
+    margin-left: 70%;
+}
+
+h1{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 700;
+    
+}
+.upper{
+    text-align: center;
+    background-color: #212121;
+    color: white;
+    
+
+}
+.points{
+    margin: 0 15%;
+    background-color: white;
+    padding: 10px 20px;
+}
+li{
+    font-size: larger;
+    color: black;
+}
+p{
+    font-family: 'Noto Sans Display', sans-serif;
+    color: black;
+}
+ul{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size:small;
+}

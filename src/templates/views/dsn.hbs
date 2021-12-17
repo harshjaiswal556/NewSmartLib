@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library - Create your own library</title> 
+
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- Favicon link -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<!-- CSS Styling -->
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0.700);
+        color: white;
+        width: 100%;
+        padding: 1vw 3vw;
+        position: fixed;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    li {
+        list-style: none;
+        padding: 0vw 1.5vw;
+        font-size: 150%;
+    }
+
+    .head {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .searchBar {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    #search {
+        width: 20vw;
+        height: 3.5vh;
+        border: 5px solid white;
+        border-radius: 3px;
+    }
+
+    #sbutton {
+        padding: 0.3vh 1vw;
+        border: 2px solid white;
+        border-radius: 3px;
+    }
+
+    .title {
+        padding-right: 60px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .container {
+        background-image: url('libWallpaper.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .con1 {
+        position: absolute;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        top: 46%;
+        left: 45%;
+        width: 18em;
+        height: 26em;
+        margin-top: -10em;
+        margin-left: -8em;
+        padding: 2vw;
+        backdrop-filter: blur(3px);
+        background: rgb(255, 255, 255, 0.2);
+        font-family: 'Dancing Script', cursive;
+        font-size: 110%;
+        z-index: 1;
+        color: white;
+    }
+
+    #CreateLib {
+        border: 2px solid rgb(82, 82, 82);
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: grey;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: burlywood;
+        font-size: 105%;
+    }
+</style>
+
+<!-- Web page body -->
+<body>
+    <!-- Header of webpage -->
+    <header>
+        <nav>
+            <ul class="head">
+                <li class="logo"><img src="libLogo.png" alt="Error. Retry later." height="50px"></li>
+                <li class="title">MY LIBRARY</li>
+                <!-- Some of the webpage links -->
+                <ul class="head">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="index">About us</a></li>
+                    <li><a href="terms">Terms and Conditions</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main body of webpage -->
+    <main>
+        <div class="container">
+            <div class="con1">
+                <h3 style="text-decoration: underline;">Create your own library management system at home</h3>
+                <br>
+                <strong>
+                    <p>This is the site from where you can easily create the library management system with full
+                        security wihtout any cost. This site can help you to craete login/signup authentication for
+                        privacy purpose at your computer and also includes the payment option if any customer wants to
+                        purchase any books from your library.</p>
+                    <br>
+                    <p>Please read our T&Cs before using our site.</p>
+                </strong>
+                <!-- Link to create own library -->
+                <div id="CreateLib">
+                    <a href="register">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
